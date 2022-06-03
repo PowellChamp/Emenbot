@@ -21,8 +21,12 @@ async def on_message(message):
         "Shut up horse fucker",
         "Go fuck your horse",
         "Shut up Ben",
-        "Calculating address based on IP...",
-        "David doesn't love you"
+        "Shut up bitch",
+        "David doesn't love you",
+        "You're adopted",
+        "Fucking dog",
+        "You drank sock water...",
+        "https://tenor.com/view/mayweather-throwing-ls-gif-7288740"
     ]
     if str(message.author) == "Tom#9518":
         await message.reply(random.choice(responses))
