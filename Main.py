@@ -1,5 +1,6 @@
 import discord
 import os
+import random
 
 client = discord.Client()
 
@@ -9,7 +10,21 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if str(message.author) == "BackRow#1214":
-        await message.reply("Shut up retard")
+    responses = [
+        "Shut up retard",
+        "Oh my god you are retarded",
+        "This opinion is invalid",
+        "RIP Horse",
+        "Suck your mum",
+        "Who asked?",
+        "Just leave already",
+        "Shut up horse fucker",
+        "Go fuck your horse",
+        "Shut up Ben",
+        "Calculating address based on IP...",
+        "David doesn't love you"
+    ]
+    if str(message.author) == "Tom#9518":
+        await message.reply(random.choice(responses))
 
 client.run(os.getenv('EMENBOT'))
