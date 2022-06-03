@@ -26,7 +26,11 @@ async def on_message(message):
         "You're adopted",
         "Fucking dog",
         "You drank sock water...",
-        "https://tenor.com/view/mayweather-throwing-ls-gif-7288740"
+        "https://tenor.com/view/mayweather-throwing-ls-gif-7288740",
+        "Nonce",
+        "Don't care",
+        "https://cdn.discordapp.com/attachments/953625837729644584/982343726976364604/unknown.png",
+        "https://cdn.discordapp.com/attachments/895043936924618762/982343884875104256/unknown.png"
     ]
     if str(message.author) == "Tom#9518":
         await message.reply(random.choice(responses))
