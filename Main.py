@@ -33,6 +33,7 @@ async def on_message(message):
         "https://cdn.discordapp.com/attachments/895043936924618762/982343884875104256/unknown.png"
     ]
     if str(message.author) == "BackRow#1214":
-        await message.reply(random.choice(responses))
+        if random.randint(0,25) == 1:
+            await message.reply(random.choice(responses))
 
 client.run(os.getenv('EMENBOT'))
