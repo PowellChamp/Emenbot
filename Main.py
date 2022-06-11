@@ -34,8 +34,8 @@ async def on_message(message):
         "What's your problem with me?\nalways have to be an arsehole don't you"
     ]
     if str(message.author) == "BackRow#1214":
-        chance = random.randint(0,5)
-        print(chance)
+        chance = random.randint(1,5)
+        print(f"BackRow send a message, chance: {chance}")
         if chance == 1:
             await message.reply(random.choice(responses))
 
