@@ -34,7 +34,9 @@ async def on_message(message):
         "What's your problem with me?\nalways have to be an arsehole don't you"
     ]
     if str(message.author) == "BackRow#1214":
-        if random.randint(0,25) == 1:
+        chance = random.randint(0,25)
+        print(chance)
+        if chance == 1:
             await message.reply(random.choice(responses))
 
 client.run(os.getenv('EMENBOT'))
